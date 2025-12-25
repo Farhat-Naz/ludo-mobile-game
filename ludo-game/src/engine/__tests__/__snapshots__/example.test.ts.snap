@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+
+exports[`Example Tests - Jest + fast-check Example Snapshot Tests board config snapshot 1`] = `
+{
+  "POSITIONS_PER_PLAYER": 18,
+  "SAFE_ZONE_POSITIONS": 6,
+  "TOKENS_PER_PLAYER": 4,
+  "TOTAL_POSITIONS": 72,
+}
+`;
+
+exports[`Example Tests - Jest + fast-check Example Snapshot Tests dice config snapshot 1`] = `
+{
+  "EXTRA_TURN_VALUE": 6,
+  "MAX_VALUE": 6,
+  "MIN_VALUE": 1,
+  "OPEN_TOKEN_VALUE": 6,
+}
+`;
+
+exports[`Example Tests - Jest + fast-check Example Snapshot Tests player config snapshot 1`] = `
+{
+  "MAX_PLAYERS": 4,
+  "MIN_PLAYERS": 2,
+  "STARTING_POSITION": {
+    "blue": 18,
+    "green": 36,
+    "red": 0,
+    "yellow": 54,
+  },
+}
+`;
