@@ -12,9 +12,12 @@
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.farhatsaz.ludogame"
+      "bundleIdentifier": "com.farhatnaz.ludogame"
     },
     "android": {
       "adaptiveIcon": {
@@ -22,13 +25,29 @@
         "backgroundColor": "#ffffff"
       },
       "package": "com.farhatnaz.ludogame",
+      "versionCode": 1,
       "minSdkVersion": 26,
       "targetSdkVersion": 34,
       "edgeToEdgeEnabled": true,
-      "predictiveBackGestureEnabled": false
+      "predictiveBackGestureEnabled": false,
+      "permissions": [],
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.farhatnaz.ludogame"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-av",
+        {
+          "microphonePermission": false
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "UPDATE_THIS_AFTER_EAS_INIT"
+      }
     }
   }
 }
