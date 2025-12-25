@@ -1,0 +1,54 @@
+export default {
+  expo: {
+    name: "Ludo Game",
+    slug: "ludo-game",
+    version: "1.0.0",
+    orientation: "portrait",
+    icon: "./assets/icon.png",
+    userInterfaceStyle: "light",
+    newArchEnabled: true,
+    splash: {
+      image: "./assets/splash-icon.png",
+      resizeMode: "contain",
+      backgroundColor: "#ffffff"
+    },
+    assetBundlePatterns: [
+      "**/*"
+    ],
+    ios: {
+      supportsTablet: true,
+      bundleIdentifier: "com.farhatnaz.ludogame"
+    },
+    android: {
+      adaptiveIcon: {
+        foregroundImage: "./assets/adaptive-icon.png",
+        backgroundColor: "#ffffff"
+      },
+      package: "com.farhatnaz.ludogame",
+      versionCode: 1,
+      minSdkVersion: 26,
+      targetSdkVersion: 34,
+      edgeToEdgeEnabled: true,
+      predictiveBackGestureEnabled: false,
+      permissions: [],
+      playStoreUrl: "https://play.google.com/store/apps/details?id=com.farhatnaz.ludogame"
+    },
+    web: {
+      favicon: "./assets/favicon.png",
+      bundler: "metro"
+    },
+    plugins: [
+      [
+        "expo-av",
+        {
+          microphonePermission: false
+        }
+      ]
+    ],
+    extra: {
+      eas: {
+        projectId: "UPDATE_THIS_AFTER_EAS_INIT"
+      }
+    }
+  }
+};
